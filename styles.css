@@ -5,7 +5,12 @@
     --preto:#000;
     --bg-color-1:#323845;
     --bg-color-2:#101623;
-    --containbg-color:#101623;
+    --container-bg-color:#1e1f24;
+     --header-color-1:#2c2e45;
+    --header-color-2:#545d70;
+    --link-hover-color:#ffae00;
+     --banner-shadow-color-1:#000000;
+    --banner-shadow-color-2:#00000000;
 }
 body {
     display: flex;
@@ -13,17 +18,90 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--bg-color-1);
-    background: linear-gradient(18deg,
+    background: linear-gradient(180deg,
        var(--bg-color-1) 0%,
        var(--bg-color-2) 100%
     );
     width: 100vw;
     height: 100vh;
     color: var(--branco);
-    font-family: "Roboto"sans-serif;
+    font-family: "Roboto", sans-serif;;
     letter-spacing: 2px;
     overflow-x: hidden;
 }
 #container {
+          background-color: var(--container-bg-color);
+          max-width: 1280px;
+          margin: 50px;
+          min-height: calc(100vh - 100);
+          flex-grow: 1;
+          box-shadow: -10px 10px 40px var(--preto);
+}
+#header {
+     background-color: var(--bg-color-1);
+    background: linear-gradient(90deg,
+       var(--header-color-1) 0%,
+       var(--header-color-2) 100%
+    );
+}
 
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+ nav > img {
+    align-self: flex-start;
+         margin: 10px 3vw;
+ }
+ 
+ nav > ul {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     gap: 7vw;
+ }
+
+ nav > ul > li {
+         text-decoration: none;
+         display: inline;
+
+ }
+
+ a {
+    color: var(--branco);
+    text-decoration: none;
+ }
+
+  a:hover {
+    color: var(--link-hover-color);
+    
+ }
+
+ #banner {
+     height: 600px;
+       background-image: url(images/banner.png);
+       background-position: left;
+       background-repeat: no-repeat;
+       background-size: cover;
+ }
+
+ #banner-shadow {
+       height: 100%;
+       background: linear-gradient( 0deg,
+       var(--banner-shadow-color-1) 0%,
+       var(--banner-shadow-color-2) 50%,
+        var(--banner-shadow-color-2) 100%    
+    );
+    position: relative;
+ }
+
+#banner h1 {
+    position: relative;
+    top: -180px;
+    left: 40px;
+    font-size: 65px;
+    text-transform: uppercase;
 }
