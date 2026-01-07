@@ -14,6 +14,9 @@
     --box-bg-color:#2b2c44;
     --btn-color-1:#449225;
     --btn-color-2: #c1ffa8;
+      --bar-color1:#787f9a;
+      --bar-color2:#ffae00;
+;
 }
 body {
     display: flex;
@@ -191,5 +194,44 @@ nav {
  #HABILIDADES > h3 {
       padding-left: 20px;
  }
+
+ #HABILIDADES .tecnologias {
+        margin: 20px;
+        padding: 20px;
+        background-color: var(--box-bg-color);
+        display: flex;
+        border-radius: 10px;
+        justify-content: stretch;
+        align-items: center;
+        gap: 20px;
+ }
+
+ .tecnologias img {
+     width: 50px;
+     height: 50px;
+ }
+
+.tecnologias > div {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+}
+
+.tecnologias > div > span {
+       font-size: 20px;
+       font-weight: bold;
+}
+.BAR {
+    height: 20px;
+    background-color: var(--bar-color1);
+    border-radius: 10px;
+}
+
+.BAR div {
+    height: 20px;
+    background-color: var(--bar-color2);
+    border-radius: 10px;
+}
 
 
