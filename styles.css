@@ -11,6 +11,9 @@
     --link-hover-color:#ffae00;
      --banner-shadow-color-1:#000000;
     --banner-shadow-color-2:#00000000;
+    --box-bg-color:#2b2c44;
+    --btn-color-1:#449225;
+    --btn-color-2: #c1ffa8;
 }
 body {
     display: flex;
@@ -20,10 +23,7 @@ body {
     background-color: var(--bg-color-1);
     background: linear-gradient(180deg,
        var(--bg-color-1) 0%,
-       var(--bg-color-2) 100%
-    );
-    width: 100vw;
-    height: 100vh;
+       var(--bg-color-2) 100% );
     color: var(--branco);
     font-family: "Roboto", sans-serif;;
     letter-spacing: 2px;
@@ -105,3 +105,91 @@ nav {
     font-size: 65px;
     text-transform: uppercase;
 }
+
+#info {
+     display: flex;
+     justify-content: space-between;
+}
+
+#SOBRE {
+       flex: 1;
+}
+.title {
+        background: linear-gradient( 90deg,
+       var(--banner-shadow-color-1) 0%,
+       var(--banner-shadow-color-2) 100%
+        );
+        font-size: 36px;
+        padding: 10px 30px;
+        margin: 0 0 20px 0 ;
+}
+ #SOBRE p {
+        margin: 30px;
+        margin-right: 50px;
+ }
+
+ p {
+    font-size: 28px;
+    font-weight: lighter;
+ }
+
+ #HABILIDADES {
+      flex: 1;
+      margin-right: 30px;
+      margin-top: -180px;
+      z-index: 100;
+ }
+
+  #social {
+      display: flex;
+ }
+ #social img {
+
+      width: 50px;
+      padding: 10px 0 0 30px;
+      transition: width 100ms;
+ }
+
+ #social img:hover {
+      width: 55px;
+      
+ }
+ #Resumo {
+      width: 390px ;
+      padding: 20px;
+      background-color: var(--box-bg-color);
+      border-radius: 10px;
+ }
+
+ h3 {
+    font-size: 36px;
+ }
+
+ #Resumo h3 {
+      margin: 0;
+      padding: 0;
+ }
+
+ #Resumo a {
+      text-transform: uppercase;
+      background-color: var(--btn-color-1);
+      color: var(--branco);
+      font-size: 16px;
+      border-radius: 10px;
+      border: none;
+      padding: 10px;
+      font-weight: bold;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+ }
+ #Resumo a:hover {
+      background-color: var(--btn-color-2);
+      color: var(--btn-color-1);
+
+ }
+
+ #HABILIDADES > h3 {
+      padding-left: 20px;
+ }
+
+
