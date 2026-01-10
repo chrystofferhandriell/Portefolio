@@ -59,6 +59,9 @@ nav {
     align-self: flex-start;
          margin: 10px 3vw;
  }
+ .menu-hambuerger{
+     display: none;
+ }
  
  nav > ul {
      width: 100%;
@@ -245,12 +248,12 @@ nav {
 }
 
 #galeria-projetos a {
-          width: 45%;
+          max-width: 45%;
 }
 
 #galeria-projetos > a > img {
      max-width: 100%;
-     margin: 10px;
+     margin: 10px 0 10px 0;
           
 }
 
@@ -260,15 +263,15 @@ nav {
      
 }
 
-#container_formulario {
-     margin: 20px 0 40px 0;
+#container-formulario {
+     margin: 20px 40px ;
      padding: 20px;
      max-width: 800px;
      background-color: var(--box-bg-color);
      border-radius: 10px;
      align-self: center;
-     margin-left:30px;
-     
+
+
 }
 
 form {
@@ -326,16 +329,104 @@ h4 {
      background-color: var(--branco);
 }
 
-@media (max-width: 1000px ){
-      #banner h1 {
-          font-size: 45px;
-      }
+@media (max-width: 1000px) {
+  #banner h1 {
+    font-size: 45px;
+  }
 
-      #nav {
-          gap: 0;
-      }
+  nav {
+    gap: 0px;
+  }
+
+  nav > ul {
+    gap: 3vw;
+  }
+
+#galeria-projetos a {
+          max-width: 40%;
 }
 
-@media ( max-width:767px) {
-     
+  #container-formulario {
+    max-width: 690px;
+  }
 }
+
+@media (max-width: 767px) {
+  #banner h1 {
+    font-size: 46px;
+    position: relative;
+    top: -100px;
+    left: 25px;
+    width: calc(100% - 50px);
+  }
+
+  #info {
+    flex-direction: column;
+  }
+
+  #banner {
+    height: 300px;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  nav > ul {
+    flex-direction: column;
+    display: none;
+    padding: 0;
+  }
+
+    nav > ul > li {
+    font-size: 18px;
+    margin: 10px;
+    text-decoration: none;
+    display: block;
+  }
+
+  nav:nth-child(1) {order: 1;}
+  nav:nth-child(2) {order: 2;}
+  nav:nth-child(3) {order: 3;}
+  
+  #HABILIDADES{
+     margin: 20px;
+  }
+  
+  #container {
+     margin: 0px;
+  }
+ h3,div.title { 
+     font-size: 22px;
+ }
+ 
+ body {
+     letter-spacing: 1px;
+ }
+ #container-formulario {
+     margin: 20px;
+ }
+
+ #galeria-projetos  {
+      flex-direction: column;
+      align-content: center;
+}
+
+#galeria-projetos a {
+          max-width: none;
+}
+
+#galeria-projetos > a > img {
+         max-width: 90vw;
+         
+}
+.menu-hambuerger {
+    display:block;
+
+}
+}
+
+ 
