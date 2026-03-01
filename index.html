@@ -1,124 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio - Refatorando</title>
-    <link rel="icon" href="public/images/logo-refatorando.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrystoffer Handriell | Fullstack Developer</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div id="container">
-        <header id="header">
-            <nav>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#HABILIDADES">HABILIDADES</a></li>
-                    <li><a href="#SOBRE">SOBRE</a></li>
-                    <li><a href="#projetos">PROJETOS</a></li>
-                    <li><a href="#contato">CONTATO</a></li>
-                </ul>
-                <img class="menu-hambuerger" src="images/icon-menu.svg" width="40px">
-            </nav>
-        </header>
-        <div id="banner">
-            <div id="banner-shadow">
 
-            </div>
-            <h1>Chrystoffer<br> Handriell </h1>
-            
-        </div>
-        <div id="info">
-            <div id="SOBRE">
-                <div class="title">Sobre Mim</div>
-                <p>Sou um desenvolvedor Fullstack com habilidades abrangentes em desenvolvimento web fullstack.</p>
-                <p>Com mais de 10 anos de experiência já trabalhei em empresas como Empresa A, Empresa B e Empresa C.</p>
-                <p>Sou capaz de entregar projetos de alta qualidade que abrangem tanto o front-end quanto o back-end, garantindo excelência em todas as etapas do desenvolvimento.</p>
-             <div id="social">
-                <a href="#"><img src="images/icon-github.png"></a>
-                <a href="#"><img src="images/icon-instagram.png"></a>
-                <a href="#"><img src="images/icon-linkedin.png"></a>
-             </div>
-            </div>
-            <div id="HABILIDADES">
-                <div id="Resumo"> 
-                    <h3>Desenvolvedor Fullstack</h3>
-                    <p>Com expertise Fullstack, proporciono projetos de alta qualidade, abrangendo front-end e back-end.</p>
-                    <a href="#contato">Entrar em contato</a>
-                </div>
-                <h3>Habilidades</h3>
-                   <div class="tecnologias">
-                    <img src="images/icon-html5.png" alt="ICON DO HTML">
-                    <div>
-                        <span>HTML</span>
-                        <div class="BAR">
-                            <div style="width: 90%;"></div>
-                        </div>
-                    </div>
-                   </div>
-
-                   <div class="tecnologias">
-                    <img src="images/icon-css3.png" alt="ICON DO CSS">
-                    <div>
-                        <span>CSS</span>
-                        <div class="BAR">
-                            <div style="width: 80%;"></div>
-                        </div>
-                    </div>
-                   </div>
-
-                   <div class="tecnologias">
-                    <img src="images/icon-javascript.png" alt="ICON DO HTML">
-                    <div>
-                        <span>Javascript</span>
-                        <div class="BAR">
-                            <div style="width: 95%;"></div>
-                        </div>
-                    </div>
-                   </div>
-
-                   <div class="tecnologias">
-                    <img src="images/icon-git.png" alt="ICON DO HTML">
-                    <div>
-                        <span>Git & Github</span>
-                        <div class="BAR">
-                            <div style="width: 60%;"></div>
-                        </div>
-                    </div>
-                   </div>
-   
-            </div>
-        </div>
-        <div id="projetos">
-                <div class="title">
-                    Projetos
-                </div>
-                <div id="galeria-projetos">
-                    <a href="#"><img src="images/projetos-login.png" alt="projetos"></a>
-                    <a href="#"><img src="images/projetos-agendamento.png" alt="projetos"></a>
-                    <a href="#"><img src="images/projetos-ecommerce.png" alt="projetos"></a>
-                    <a href="#"><img src="images/projetos-nft.png" alt="projetos"></a>
-                    <a href="#"><img src="images/projetos-plataforma.png" alt="projetos"></a>
-                    <a href="#"><img src="images/projetos-todo-List.png" alt="projetos"></a>
-            </div>
-        <div id="CONTATO">
-                <div class="title">Contato</div>
-            <div id="container-formulario">
-                 <h4>Envie uma mensagem:</h4>
-                <form action="#">
-                    <input class="text" type="text" placeholder="Nome*" />
-                    <input class="text" type="text" placeholder="Numero do celular"/>
-                    <input class="text" type="text" placeholder="E-mail" />
-                    <textarea class="text" placeholder="Mensagens*"></textarea>
-                    <div>
-                        <input class="submit" type="submit" value="Enviar Mensagens">
-                    </div>
-                </form>
-        </div>
+  <!-- ================= NAVBAR ================= -->
+  <nav>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
     </div>
-</body>
+  </nav>
 
+    <section class="hero">
+
+        <!-- LADO ESQUERDO -->
+        <div class="hero-text">
+
+            <div class="badge">
+                <span class="dot"></span>
+                Disponível para projetos
+            </div>
+
+            <p class="portfolio-label">Portfólio</p>
+
+            <h1>
+                Olá, eu sou o <span>CHRYSTOFFER</span>
+            </h1>
+
+            <h2>
+                Product Designer & Desenvolvedor Full-Stack
+            </h2>
+
+            <p class="descricao">
+                Criando experiências de usuário centradas e entregando código otimizado.
+                Preencho a lacuna entre Design e Engenharia.
+            </p>
+
+            <div class="button">
+                <a href="#" class="but-cont">Ver Projetos</a>
+                <a href="#" class="btn-outline ">Fale Comigo</a>
+            </div>
+
+        </div>
+
+        <!-- LADO DIREITO -->
+        <div class="hero-image">
+
+            <div class="image-card">
+
+                <img src="images/perf.png" alt="Chrystoffer">
+
+                <!-- Ícones flutuantes -->
+                <div class="floating-icon icon-js"><img src="images/icon-javascript.png" alt="icon"></div>
+                <div class="floating-icon icon-html5"><img src="images/icon-html5.png" alt="icon"></div>
+                <div class="floating-icon icon-github"><img src="images/icon-github.png" alt="icon"></div>
+                <div class="floating-icon icon-typescript"><img src="images/icon-typescript.png" alt="icon"></div>
+                <div class="floating-icon icon-css3"><img src="images/icon-css3.png" alt="icon"></div>
+                <div class="floating-icon icon-git"><img src="images/icon-git.png" alt="icon"></div>
+                <div class="floating-icon icon-node"><img src="images/icon-node.png" alt="icon"></div>
+                <div class="floating-icon icon-tailwind"><img src="images/icon-tailwind.png" alt="icon"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+  <!-- ================= SOBRE ================= -->
+  <section id="sobre">
+    <div class="Resumo">
+      <div class="about"></div>
+      <h2>Sobre Mim</h2>
+
+        <p class="tex">
+          Sou desenvolvedor Fullstack com experiência na criação de aplicações
+          modernas e performáticas.
+          <br>
+          <br>
+          Atuo no desenvolvimento front-end e back-end,
+          utilizando tecnologias atuais para entregar
+          experiências digitais futuristas e funcionais.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= HABILIDADES ================= -->
+  <section id="habilidades">
+    <div class="skill">
+
+      <h2>Habilidades</h2>
+
+      <div class="skill-card">
+        <h3>HTML</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 95%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>CSS</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 90%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 85%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Git & Github</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 80%;"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PROJETOS ================= -->
+  <section id="projetos">
+    <div class="projetos">
+
+      <h2>Projetos</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <img src="images/projetos-agendamento.png" alt="Projeto 1">
+        </div>
+
+        <div class="project-card">
+          <img src="images/projetos-ecommerce.png" alt="Projeto 2">
+        </div>
+
+        <div class="project-card">
+          <img src="images/projetos-login.png" alt="Projeto 3">
+        </div>
+
+        <div class="project-card">
+          <img src="images/projetos-nft.png" alt="Projeto 4">
+        </div>
+
+        <div class="project-card">
+          <img src="images/projetos-plataforma.png" alt="Projeto 4">
+        </div>
+
+        <div class="project-card">
+          <img src="images/projetos-todo-List.png" alt="Projeto 4">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CONTATO ================= -->
+  <section id="contato" class="section">
+    <div class="container">
+
+      <h2>Contato</h2>
+
+      <form>
+        <input type="text" placeholder="Seu nome">
+        <input type="email" placeholder="Seu email">
+        <textarea rows="5" placeholder="Sua mensagem"></textarea>
+        <button class="but-final" type="submit">ENVIAR MENSAGEM</button>
+      </form>
+
+      <div class="social-icons">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+      </div>
+
+    </div>
+  </section>
+
+</body>
 </html>
