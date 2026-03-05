@@ -5,15 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chrystoffer Handriell | Fullstack Developer</title>
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
+  
   <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript">
+              window.onload = function(){
+              (function(d, script) {
+              script = d.createElement('script');
+              script.type = 'text/javascript';
+              script.async = true;
+              script.src = 'https://w.app/widget-v1/sSfr5W.js';
+              d.getElementsByTagName('head')[0].appendChild(script);
+              }(document));
+              };
+              </script>
 </head>
 <body>
 
   <!-- ================= NAVBAR ================= -->
+    <div id="home">
   <nav>
     <div>
       <a href="#home">Home</a>
@@ -26,7 +36,6 @@
 
     <section class="hero">
 
-        <!-- LADO ESQUERDO -->
         <div class="hero-text">
 
             <div class="badge">
@@ -50,8 +59,8 @@
             </p>
 
             <div class="button">
-                <a href="#" class="but-cont">Ver Projetos</a>
-                <a href="#" class="btn-outline ">Fale Comigo</a>
+                <a href="#projetos" class="but-cont">Ver Projetos</a>
+                <a href="#contato" class="btn-outline ">Fale Comigo</a>
             </div>
 
         </div>
@@ -152,7 +161,7 @@
         </div>
 
         <div class="project-card">
-          <img src="images/projetos-login.png" alt="Projeto 3">
+          <a href="http://127.0.0.1:3002/c:/Users/PICHAU/Documents/Projetos/Pagina-Login/Pagina-Login/index.html?serverWindowId=5e6f1f7c-87e9-4499-97cd-88685dd5bd90" target="_blank"><img src="images/projetos-login.png" alt="Projeto 3"></a>
         </div>
 
         <div class="project-card">
@@ -164,7 +173,7 @@
         </div>
 
         <div class="project-card">
-          <img src="images/projetos-todo-List.png" alt="Projeto 4">
+          <a href="http://127.0.0.1:3002/c:/Users/PICHAU/Documents/Projetos/pagina-To-do-List/index.html?serverWindowId=271761e0-7628-478e-bfee-78803ffd649f" target="_blank"><img src="images/projetos-todo-List.png" alt="Projeto 4"></a>
         </div>
 
       </div>
@@ -173,26 +182,58 @@
   </section>
 
   <!-- ================= CONTATO ================= -->
-  <section id="contato" class="section">
-    <div class="container">
+  <section id="contato">
+    <div class="container-contato">
 
       <h2>Contato</h2>
-
+     <div class="for-con">
       <form>
         <input type="text" placeholder="Seu nome">
         <input type="email" placeholder="Seu email">
         <textarea rows="5" placeholder="Sua mensagem"></textarea>
-        <button class="but-final" type="submit">ENVIAR MENSAGEM</button>
       </form>
-
-      <div class="social-icons">
-        <a href="#">GitHub</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Instagram</a>
-      </div>
-
+        <button class="but-final" type="submit">ENVIAR MENSAGEM</button>
+     </div>
+      
     </div>
   </section>
+
+
+    <div class="footer-container">
+
+        <div class="footer-left">
+            <h3>CHRYSTOFFER</h3>
+            <p>
+                Desenvolvedor Full-Stack focado em criar experiências digitais modernas,
+                rápidas e eficientes.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Navegação</h4>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h4>Redes</h4>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/chrystofferhandriellsantos/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/chrystofferhandriell" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 CHRYSTOFFER. Todos os direitos reservados.</p>
+    </div>
+
+</footer>
 
 </body>
 </html>
